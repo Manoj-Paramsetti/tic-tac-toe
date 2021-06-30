@@ -403,43 +403,60 @@ function checkMatch() {
         //Checks O wins
         else if (box1.innerHTML == "O" && box2.innerHTML == "O" && box3.innerHTML == "O") {
             comp += 1;
-            result.innerHTML = "Computer won the game"
+            result.innerHTML = "Computer won the game";
+            line1.display = "flex";
+            line1.animation = "draw_line 3s";
             match_completed();
         } else if (box4.innerHTML == "O" && box5.innerHTML == "O" && box6.innerHTML == "O") {
             comp += 1;
-            result.innerHTML = "Computer won the game"
+            result.innerHTML = "Computer won the game";
+            line2.display = "flex";
+            line2.animation = "draw_line 3s";
             match_completed();
         } else if (box7.innerHTML == "O" && box8.innerHTML == "O" && box9.innerHTML == "O") {
             comp += 1;
-            result.innerHTML = "Computer won the game"
+            result.innerHTML = "Computer won the game";
+            line3.display = "flex";
+            line3.animation = "draw_line 3s";
             match_completed();
         }
 
         //vertical lines
         else if (box1.innerHTML == "O" && box4.innerHTML == "O" && box7.innerHTML == "O") {
             comp += 1;
-            result.innerHTML = "Computer won the game"
+            result.innerHTML = "Computer won the game";
+            line4.display = "flex";
+            line4.animation = "draw_line 3s";
             match_completed();
         } else if (box2.innerHTML == "O" && box5.innerHTML == "O" && box8.innerHTML == "O") {
             comp += 1;
-            result.innerHTML = "Computer won the game"
+            result.innerHTML = "Computer won the game";
+            line5.display = "flex";
+            line5.animation = "draw_line 3s";
             match_completed();
         } else if (box9.innerHTML == "O" && box6.innerHTML == "O" && box3.innerHTML == "O") {
             comp += 1;
-            result.innerHTML = "Computer won the game"
+            result.innerHTML = "Computer won the game";
+            line6.display = "flex";
+            line6.animation = "draw_line 3s";
             match_completed();
         }
         //Diagonal Lines
         else if (box1.innerHTML == "O" && box5.innerHTML == "O" && box9.innerHTML == "O") {
             comp += 1;
-            result.innerHTML = "Computer won the game"
+            result.innerHTML = "Computer won the game";
+            line7.display = "flex";
+            line7.animation = "draw_line 3s";
             match_completed();
         } else if (box3.innerHTML == "O" && box5.innerHTML == "O" && box7.innerHTML == "O") {
             comp += 1;
-            result.innerHTML = "Computer won the game"
+            result.innerHTML = "Computer won the game";
+            line8.display = "flex";
+            line8.animation = "draw_line 3s";
             match_completed();
         } else {
-            alert("Draw");
+            result.innerHTML = "Draw : )"
+            match_completed();
         }
     }
     //Horizontal lines
@@ -501,40 +518,56 @@ function checkMatch() {
     //Checks O wins
     else if (box1.innerHTML == "O" && box2.innerHTML == "O" && box3.innerHTML == "O") {
         comp += 1;
-        result.innerHTML = "Computer won the game"
+        result.innerHTML = "Computer won the game";
+        line1.display = "flex";
+        line1.animation = "draw_line 3s";
         match_completed();
     } else if (box4.innerHTML == "O" && box5.innerHTML == "O" && box6.innerHTML == "O") {
         comp += 1;
-        result.innerHTML = "Computer won the game"
+        result.innerHTML = "Computer won the game";
+        line2.display = "flex";
+        line2.animation = "draw_line 3s";
         match_completed();
     } else if (box7.innerHTML == "O" && box8.innerHTML == "O" && box9.innerHTML == "O") {
         comp += 1;
-        result.innerHTML = "Computer won the game"
+        result.innerHTML = "Computer won the game";
+        line3.display = "flex";
+        line3.animation = "draw_line 3s";
         match_completed();
     }
 
     //vertical lines
     else if (box1.innerHTML == "O" && box4.innerHTML == "O" && box7.innerHTML == "O") {
         comp += 1;
-        result.innerHTML = "Computer won the game"
+        result.innerHTML = "Computer won the game";
+        line4.display = "flex";
+        line4.animation = "draw_line 3s";
         match_completed();
     } else if (box2.innerHTML == "O" && box5.innerHTML == "O" && box8.innerHTML == "O") {
         comp += 1;
-        result.innerHTML = "Computer won the game"
+        result.innerHTML = "Computer won the game";
+        line5.display = "flex";
+        line5.animation = "draw_line 3s";
         match_completed();
     } else if (box9.innerHTML == "O" && box6.innerHTML == "O" && box3.innerHTML == "O") {
         comp += 1;
-        result.innerHTML = "Computer won the game"
+        result.innerHTML = "Computer won the game";
+        line6.display = "flex";
+        line6.animation = "draw_line 3s";
         match_completed();
     }
     //Diagonal Lines
     else if (box1.innerHTML == "O" && box5.innerHTML == "O" && box9.innerHTML == "O") {
         comp += 1;
-        result.innerHTML = "Computer won the game"
+        result.innerHTML = "Computer won the game";
+        line7.display = "flex";
+        line7.animation = "draw_line 3s";
         match_completed();
     } else if (box3.innerHTML == "O" && box5.innerHTML == "O" && box7.innerHTML == "O") {
         comp += 1;
-        result.innerHTML = "Computer won the game"
+        result.innerHTML = "Computer won the game";
+        line8.display = "flex";
+        line8.animation = "draw_line 3s";
         match_completed();
     }
 }
