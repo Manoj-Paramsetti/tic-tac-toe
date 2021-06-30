@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #576574;
+    overflow: -moz-hidden-unscrollable;
+    height: 100vh;
+}
+
+.NavBar--Main {
+    display: flex;
+    padding: 40px;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px black;
+}
+
+.Score--Bar {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+}
+
+.Game-Outer {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-top: 15vh;
+    display: absolute;
+}
+
+.Game-Board {
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#line1 {
+    display: none;
+    position: absolute;
+    height: 10px;
+    width: 280px;
+    background: #222f3e;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+@keyframes draw_line {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 280px;
+    }
+}
+
+#line2 {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 10px;
+    background: #222f3e;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 150px;
+}
+
+#line3 {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 10px;
+    background: #222f3e;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 250px;
+}
+
+#line4 {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 10px;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    background: #222f3e;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+#line5 {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 10px;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    background: #222f3e;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+#line6 {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 10px;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    background: #222f3e;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 250px;
+    margin-top: 15px;
+}
+
+#line7 {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 10px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    background: #222f3e;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 45px;
+}
+
+#line8 {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 10px;
+    transform: rotate(-45deg);
+    transform-origin: 100% 0%;
+    background: #222f3e;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+.Computer-Score {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.Box-1 {
+    text-align: center;
+    border: 1px solid white;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    height: 100px;
+    width: 100px;
+    grid-row-start: 1;
+}
+
+.Box-2 {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+.Box-3 {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+.Box-4 {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+}
+
+.Box-5 {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border: 1px solid white;
+}
+
+.Box-6 {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+.Box-7 {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+.Box-8 {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: solid;
+}
+
+.Box-9 {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: solid;
+}
+
+.occupy_full {
+    display: flex;
+    justify-content: center;
+}
+
+#Restart {
+    border: 0px;
+    border-radius: 8px;
+    margin-left: 50vw;
+    margin-right: 50vw;
+    padding: 10px;
+    background-color: #222f3e;
+    color: white;
+    display: none;
+}
+
+#result {
+    position: absolute;
+    top: 150px;
+    width: 190px;
+    padding: 10px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 0px 8px 8px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    display: none;
+}
+
+@keyframes display_result {
+    from {
+        left: -190px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .NavBar--Main {
+        padding: 20px;
+    }
+    .Score--Bar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

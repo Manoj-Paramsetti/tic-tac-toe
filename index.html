@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@500;800;900&display=swap" rel="stylesheet">
+    <title>TIC-TAE-TOE</title>
+</head>
+
+<body>
+    <nav class="NavBar--Main">
+        <b>Tic-Tae-Toe</b>
+        <div id="Game-Count">Games Played:
+            <div id="Games-Played" style="display: inline; white-space: pre-wrap;">0</div>
+    </nav>
+    <hr>
+    <br>
+
+    <div class="Score--Bar">
+        <div>User:
+            <div id="user" style="display: inline; white-space: pre-wrap;">0</div>
+        </div>
+        <div>Computer:
+            <div id="comp" style="display: inline; white-space: pre-wrap;">0</div>
+        </div>
+    </div>
+    <br>
+
+    <div class="Game-Outer">
+        <hr id="line1">
+        <hr id="line2">
+        <hr id="line3">
+        <hr id="line4">
+        <hr id="line5">
+        <hr id="line6">
+        <hr id="line7">
+        <hr id="line8">
+        <div class="Game-Board">
+            <div class="Box-1" onclick="box_1()">
+                <h1 id="Box-1"></h1>
+            </div>
+            <div class="Box-2" onclick="box_2()">
+                <h1 id="Box-2"></h1>
+
+            </div>
+            <div class="Box-3" onclick="box_3()">
+                <h1 id="Box-3"></h1>
+            </div>
+            <div class="Box-4" onclick="box_4()">
+                <h1 id="Box-4"></h1>
+            </div>
+            <div class="Box-5" onclick="box_5()">
+                <h1 id="Box-5"></h1>
+            </div>
+            <div class="Box-6" onclick="box_6()">
+                <h1 id="Box-6"></h1>
+            </div>
+            <div class="Box-7" onclick="box_7()">
+                <h1 id="Box-7"></h1>
+            </div>
+            <div class="Box-8" onclick="box_8()">
+                <h1 id="Box-8"></h1>
+            </div>
+            <div class="Box-9" onclick="box_9()">
+                <h1 id="Box-9"></h1>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div id="result">
+    </div>
+    <div class="occupy_full">
+        <button id="Restart" onclick=Restart()>Restart</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
